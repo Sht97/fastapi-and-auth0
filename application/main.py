@@ -10,27 +10,23 @@ app = FastAPI()
 def public():
     """No access token required to access this route"""
 
-    result = {
+    return {
         "status": "success",
         "msg": (
             "Hello from a public endpoint! "
             "You don't need to be authenticated to see this."
         ),
     }
-    return result
 
 
 @app.get("/api/private")
 def private():
     """A valid access token is required to access this route"""
 
-    # We need to protect this endpoint!
-
-    result = {
+    return {
         "status": "success",
         "msg": (
             "Hello from a private endpoint! "
             "You need to be authenticated to see this."
         ),
     }
-    return result
