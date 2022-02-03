@@ -1,4 +1,4 @@
-name: pre-commit
+name: echho commit
 
 on:
   push:
@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: sample echo
-      run: echo "simple echo from ${{ github.event.head_commit.message }}"
+      run: echo "simple echo from commit ${{ github.event.head_commit.message }}"
