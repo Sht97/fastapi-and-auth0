@@ -12,8 +12,10 @@ def public():
 
     result = {
         "status": "success",
-        "msg": ("Hello from a public endpoint! "
-                "You don't need to be authenticated to see this.")
+        "msg": (
+            "Hello from a public endpoint! "
+            "You don't need to be authenticated to see this."
+        ),
     }
     return result
 
@@ -26,7 +28,9 @@ def private():
 
     result = {
         "status": "success",
-        "msg": ("Hello from a private endpoint! "
-                "You need to be authenticated to see this.")
+        "msg": (
+            "Hello from a private endpoint! "
+            "You need to be authenticated to see this."
+        ),
     }
     return result
