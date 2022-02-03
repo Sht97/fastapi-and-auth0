@@ -1,0 +1,12 @@
+name: pre-commit
+
+on:
+  push:
+    branches: ["**"]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+    - name: sample echo
+      run: echo "simple echo from ${{ github.event.head_commit.message }}"
